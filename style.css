@@ -1,151 +1,312 @@
+/* *{margin: 0;padding: 0;}
+main{
+    background-image: url('assests/img/bg.jpg');
+    height: 80vh;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
 * {
-    font-family: "Segoe UI";
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/41c789f0-7df5-4219-94c6-c66fe500590a/36d04a0c-0510-4b24-8d1a-c110ce7e9218/NP-en-20240513-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Segoe UI";
-
-}
-
-.logo img {
-    width: 170px;
-}
-
-.right ul {
-    display: flex;
-    gap: 34px;
-
-}
-
-.right ul li {
-    list-style: none;
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
     display: flex;
     align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
     cursor: pointer;
+
 }
 
-.right ul li span {
-    padding: 0 9px;
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
 }
 
 .first {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
     justify-content: center;
     align-items: center;
-    gap: 23px;
-    margin: 70px;
 }
 
-.first span {
-    font-size: 40px;
+
+
+.secImg {
+    position: relative;
 }
 
-.first span img {
-    width: 82px;
-
-    margin: 0 23px;
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
 }
 
-.first p {
-    font-style: 23px;
-    width: 44vw;
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+
+.faq h2 {
     text-align: center;
+    font-size: 48px;
 }
 
-.btn {
-    background-color: #01b7d1;
-    padding: 15px 17px;
+.faq {
+    background: black;
     color: white;
-    border: none;
-    font-weight: 700;
-    border-radius: 5px;
-    /* margin: auto; */
-    margin: 12px 0;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
     cursor: pointer;
 }
-.btn a{
-    text-decoration: none;
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
 }
 
-.green {
-    background-color: #5cb85c;
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
 }
 
 
-.second {
-    /* display: flex;
-    flex-direction: column;
 
-    align-items: center; */
-    max-width: 65vw;
-    margin: auto;
+@media screen and (max-width: 1300px) {
 
-}
-
-
-.small {
-    font-size: 12px;
-}
-
-.item {
-
-    background-color: #f9f9f9;
-    padding: 23px;
-    border-radius: 12px;
-    text-align: center;
-}
-.item-lang{
-    font-size: 20px;
-
-    font-weight: 700;
-    text-align: center;
-
-    padding-bottom:36px ;
-}
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
-}
-
-.download :nth-child(2) {
-    font-size: 23px;
-}
-
-.download{
-    display: flex;
-    /* justify-content: center; */
-    font-family: sans-serif;
-    align-items: center;
-    gap: 16px;
-}
-.download img{
-    padding: 0px 20px;
-}
-
-/* Responsive Web Design */
-
-@media screen and (max-width:1145px) {
-    .grid{
-        /* padding: 10px; */
+    .footer {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 12px;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
     }
-    /* .btn{
-        margin: 12px 0px;
-    } */
-    
 }
 
-@media  screen and (max-width=1560px) {
-    .btn{
-        margin: 12px 0;
-    }
-    
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
 }
